@@ -12,6 +12,8 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background: url('cat_back.png');
+      background-size: 80px 80px; 
     }
 
     header {
@@ -64,8 +66,8 @@
 
     /* Estilos adicionales manejados desde JavaScript */
     .loader {
-      border: 16px solid #f3f3f3; /* Light grey */
-      border-top: 16px solid #3498db; /* Blue */
+      border: 16px solid #f3f3f3; 
+      border-top: 16px solid #3498db; 
       border-radius: 50%;
       width: 120px;
       height: 120px;
@@ -195,7 +197,7 @@
       return (
         <main style={styles}>
           <header>
-            WELCOME TO MY BLOG
+            WELCOME TO MY PHOTO-BLOG
           </header>
           <React.Suspense fallback={<Loading />}>
             <Posts />
